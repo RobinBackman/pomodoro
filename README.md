@@ -1,8 +1,8 @@
 # pomodoro
 
 ## Requirements:
-### Sox:
-**sudo apt-get install sox**
+    ### Sox:
+        sudo apt-get install sox
     
 ## Usage:
-**python3 application.py**
+    python3 application.py
