@@ -1,7 +1,7 @@
 # pomodoro
 
 ## Requirements:
-    ### Sox:
+    *Sox:
         sudo apt-get install sox
     
 ## Usage:
