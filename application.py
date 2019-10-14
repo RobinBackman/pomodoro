@@ -6,7 +6,7 @@ FILE_PATH = '/home/zzzz/Desktop/pomodoro'
 
 def start_clock(time_in_minutes, project_name):
     start_time = time.time()
-    end_time = time.time() + float(time_in_minutes * 60)
+    end_time = time.time() + float(time_in_minutes * 10)
 
     while True:
         time_left = end_time - time.time()
@@ -26,8 +26,10 @@ def play_completed_sounds(duration, freq):
     os.system('spd-say "Your work session is completed"')
 
 def save_to_csv(time_in_minutes, project_name):
-    lines = ""
+    if not os.path.exists(FILE_PATH):
+        os.system(f"mkdir {FILE_PATH}")
 
+    lines = ""
     if not os.path.exists(os.path.join(f'{project_name}.csv')):
         lines += "Date,Time Worked\n"
 
