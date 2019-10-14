@@ -2,7 +2,7 @@ import time
 import datetime
 import os
 
-FILE_PATH = '/home/zzzz/Desktop/pomodoro'
+FILE_PATH = os.getcwd() + '/csv'
 
 def start_clock(time_in_minutes, project_name):
     start_time = time.time()
